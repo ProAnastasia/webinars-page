@@ -1,0 +1,96 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-black-transparent;
+  z-index: 10;
+
+  &.modal-enter {
+    opacity: 0.1;
+    transition: 200ms ease-in-out;
+
+    .modal__inner {
+      opacity: 0;
+      transition: 200ms ease-in-out 100ms;
+    }
+  }
+
+  &.modal-enter-active {
+    opacity: 1;
+
+    .modal__inner {
+      opacity: 1;
+    }
+  }
+
+  &.modal-leave {
+    transition: 200ms ease-in-out 100ms;
+
+    .modal__inner {
+      transition: 200ms ease-in-out;
+    }
+  }
+
+  &.modal-leave-active {
+    opacity: 0;
+
+    .modal__inner {
+      opacity: 0;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    min-width: 400px;
+    padding: 38px 40px 40px;
+    border-radius: 6px;
+    background: $color-white;
+    box-sizing: border-box;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      bottom: -10px;
+      left: -10px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    font-size: $form-title-size;
+    line-height: 1.19;
+    font-weight: 500;
+    color: $color-tundora-gray;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+
+  @media ($screen-375) {
+    &__inner {
+      min-width: 300px;
+      padding: 18px 20px 20px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+}

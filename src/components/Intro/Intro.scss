@@ -1,0 +1,37 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 0 20px;
+  background: #309358 url('../images/pattern-webinars.png');
+  background-size: 400px 300px;
+  box-sizing: border-box;
+
+  &__description {
+    max-width: 520px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 11px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background: #309358 url('../images/pattern-webinars@2x.png');
+    background-size: 400px 300px;
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+    background: #309358 url('../images/pattern-webinars@3x.png');
+    background-size: 400px 300px;
+  }
+}

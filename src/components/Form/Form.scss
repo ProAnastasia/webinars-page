@@ -1,0 +1,67 @@
+.form {
+  &__input {
+    margin-bottom: 20px;
+  }
+
+  &__input:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: $text-size;
+    line-height: 1.4;
+    color: $color-gray;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: solid 1px #a6b0b3;
+    border-radius: 5px;
+    background: none;
+    color: $color-gray;
+    font-family: $font-ubuntu;
+    font-weight: 400;
+    transition: all .2s linear;
+    box-sizing: border-box;
+
+    &::-webkit-input-placeholder {
+      font-size: 16px;
+      color: #aaaaaa;
+    }
+
+    &:-moz-placeholder {
+      font-size: 16px;
+      color: #aaaaaa;
+    }
+
+    &::-moz-placeholder {
+      font-size: 16px;
+      color: #aaaaaa;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 16px;
+      color: #aaaaaa;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 5px rgba(43, 148, 225, 0.3);
+      border-color: #2b94e1;
+      outline: none;
+    }
+  }
+
+  input[type="text"] {
+    height: 42px;
+  }
+
+  textarea {
+    min-height: 88px;
+    resize: vertical;
+  }
+}

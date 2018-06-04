@@ -1,0 +1,26 @@
+$font-ubuntu: "Ubuntu", Arial, sans-serif;
+
+$title-size: 48px;
+$form-title-size: 32px;
+$subtitle-size: $title-size / 2;
+$text-size: 16px;
+$text-size-small: 14px;
+
+$title-mobile-size: 36px;
+$subtitle-mobile-size: $title-mobile-size / 2;
+$text-mobile-size: 14px;
+
+$color-white: #fff;
+$color-white-transparent: transparentize($color-white, .4);
+$color-black: #000;
+$color-black-transparent: transparentize($color-black, .2);
+$color-gray: #333;
+$color-gray-transparent: transparentize($color-gray, .4);
+$color-green: #4fae33;
+$color-curious-blue: #2b94e1;
+$color-tundora-gray: #424242;
+
+$screen-1200: "max-width: 1200px";
+$screen-960: "max-width: 960px";
+$screen-768: "max-width: 768px";
+$screen-375: "max-width: 375px";
