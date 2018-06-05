@@ -35,7 +35,7 @@ export default class ImageUploader extends PureComponent {
     return (
       <div
         className="image-uploader__preview"
-        style={{backgroundImage: `url(${this.state.imagePreviewUrl}`}}
+        style={{backgroundImage: `url('${this.state.imagePreviewUrl}')`}}
       >
         <button
           className="image-uploader__clear"
