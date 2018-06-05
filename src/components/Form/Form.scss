@@ -24,29 +24,34 @@
     border-radius: 5px;
     background: none;
     color: $color-gray;
+    font-size: $text-size;
     font-family: $font-ubuntu;
     font-weight: 400;
     transition: all .2s linear;
     box-sizing: border-box;
 
     &::-webkit-input-placeholder {
-      font-size: 16px;
+      font-size: $text-size;
       color: #aaaaaa;
+      font-weight: 400;
     }
 
     &:-moz-placeholder {
-      font-size: 16px;
+      font-size: $text-size;
       color: #aaaaaa;
+      font-weight: 400;
     }
 
     &::-moz-placeholder {
-      font-size: 16px;
+      font-size: $text-size;
       color: #aaaaaa;
+      font-weight: 400;
     }
 
     &:-ms-input-placeholder {
-      font-size: 16px;
+      font-size: $text-size;
       color: #aaaaaa;
+      font-weight: 400;
     }
 
     &:focus {
@@ -58,6 +63,7 @@
 
   input[type="text"] {
     height: 42px;
+    line-height: 42px;
   }
 
   textarea {
