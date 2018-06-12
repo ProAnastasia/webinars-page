@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {} from 'react-router';
 
 import Page from 'containers/Page';
 import ModalContainer from 'containers/ModalContainer';
